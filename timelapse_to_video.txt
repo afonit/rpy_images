@@ -1,1 +1,1 @@
-ffmpeg -y -f image2 -i /home/pi/camera_tests/holder/current_series_image%03d.jpg -r 24 -vcodec libx264 -profile high -preset slow /home/pi/camera_tests/holder/timelapse.mp4
+ffmpeg -r 120 -f image2 -i /home/pi/camera_tests/holder/current_series_image%05d.jpg -vcodec libx264 -profile high -preset slow /home/pi/camera_tests/holder/timelapse.mp4
